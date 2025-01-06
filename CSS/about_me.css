@@ -45,6 +45,24 @@ body, html {
   nav li :last-child{
     margin-right: 30px;
   }
+
+  .rund-bild {
+    width: 350px; /* Größe des Bildes anpassen */
+    height: 350px; /* Gleiche Höhe und Breite für perfekte Rundung */
+    border-radius: 50%; /* Rundet das Bild zu einem Kreis */
+    object-fit: cover; /* Sorgt dafür, dass das Bild den Kreis füllt */
+    border: 2px solid #4b73af; /* Optional: Rahmen hinzufügen */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Schatten */
+  }
+  
+
+  footer {
+    text-align: center;
+    margin-top: 200px;
+    padding: 10px;
+    background-color: #4b73af;
+    color: white;
+  }
   @media (max-width: 768px) {
     .nav-wrapper {
       flex-direction: column;
