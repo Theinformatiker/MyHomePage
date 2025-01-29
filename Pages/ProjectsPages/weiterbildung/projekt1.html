@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt: Fitness-Datenanalyse</title>
+    <link rel="stylesheet" href="./css/project1.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">
+        <img class="logo" src="../../../SRC/img/Logo2.png" alt="Logo" />
+      </a>
+
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="../../../index.html">Main Pages</a></li>
+        <li><a href="../../about_me.html">About Me</a></li>
+        <li><a href="../../project.html">Projekte</a></li>
+        <li><a href="../../cv.html">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="main-content">
+      <h1>Projekt Python: Fitness-Datenanalyse</h1>
+      <h2>Darstellung und Auswertung des Datensatzes "Zepp Fitness App" :</h2>
+      <p>
+        Die Projektarbeit analysiert Daten der Zepp Fitness App, die Herzfrequenz, Geschwindigkeit, Schrittzahl, zurückgelegte Strecke und Zeiten erfassen. Ziel ist es, Trainingsmuster zu erkennen, Schwachstellen aufzudecken und Empfehlungen zur Optimierung der sportlichen Leistung zu geben.
+      </p>
+
+      <h2>Ziele:</h2>
+      <ul>
+        <li>Daten sammeln und die wichtigsten Informationen extrahieren.</li>
+        <li>Wesentliche Merkmale der Trainingsdaten in Grafiken darstellen.</li>
+        <li>Einblicke in Trainings- und Fitnesszustände gewinnen und optimieren.</li>
+      </ul>
+
+      <h2>Methodik:</h2>
+      <ul>
+        <li><strong>Datenerfassung:</strong> Daten wurden über die Fitnessuhr Amazfit GTR 3 Pro gesammelt und im GPX-Format exportiert.</li>
+        <li><strong>Datenverarbeitung:</strong> Die Rohdaten wurden mit Python-Bibliotheken wie <code>pandas</code>, <code>numpy</code> und <code>matplotlib</code> analysiert.</li>
+        <li><strong>Erstellung von DataFrames:</strong> Die Daten wurden bereinigt, interpoliert und in einer tabellarischen Struktur zusammengefasst.</li>
+        <li><strong>Visualisierung:</strong> Mithilfe von Scatterplots, Histogrammen und interaktiven Karten wurden Muster und Zusammenhänge dargestellt.</li>
+      </ul>
+
+      <h2>Ergebnisse:</h2>
+      <ul>
+        <li><strong>Darstellung der Laufstrecke:</strong> Die Laufroute wurde interaktiv auf einer Karte visualisiert.</li>
+        <li><strong>Korrelationen:</strong> Herzfrequenz und Geschwindigkeit zeigten deutliche Zusammenhänge. Höhere Geschwindigkeiten führten zu erhöhten Herzfrequenzen.</li>
+        <li><strong>Statistische Analysen:</strong>
+          <ul>
+            <li>Verteilungen der Herzfrequenz und Geschwindigkeit zeigten typische Bereiche (z. B. Herzfrequenz zwischen 150–170 bpm, Geschwindigkeit 5–10 km/h).</li>
+            <li>Zeitliche Verläufe zeigten Belastungszyklen während des Trainings.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>Berechnung der Strecke</h2>
+      <p>
+        Mit der Haversine-Formel wurde die Gesamtstrecke des Laufs auf etwa <strong>9 km</strong> berechnet, was mit den Messungen der Uhr übereinstimmt.
+      </p>
+
+      <h2>Ausblick</h2>
+      <p>
+        Die Methoden können auf andere Datensätze wie Schlafaufzeichnungen erweitert werden, um weitere Erkenntnisse zu gewinnen. Durch Vergleichsdaten könnten Fortschritte im Fitnesszustand besser evaluiert und Trainingspläne weiter optimiert werden.
+      </p>
+
+      <p>
+        <strong>Zusammenfassend:</strong> Die Arbeit bietet praxisnahe Ansätze zur Analyse von Fitnessdaten, die sowohl Hobby- als auch Profisportler nutzen können, um ihre sportliche Leistung zu verbessern und ihre Ziele effektiver zu erreichen.
+      </p>
+      <h2> Link zum Git Projket </h2>
+      <h5>
+        <a href="https://github.com/Theinformatiker/Zepp-Fitness-APP" target="_blank">Klick hier zum Git-Repository </a>
+      </h5>
+      <p>
+        <strong>Git_Info:</strong> Im Git-Repository befinden sich sowohl der Quellcode des Projekts als auch zwei Berichte im PDF-Format. Zum einen eine CAT-Version, die eine kurze Zusammenfassung enthält, und zum anderen eine NvS-Version, die einen sehr detaillierten Bericht mit Code-Erklärungen und Abbildungen zum Projekt bereitstellt.
+      </p>
+      
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2024 Volkan K. Alle Rechte vorbehalten.</p>
+      <ul class="footer-links">
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

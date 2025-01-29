@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt: RTSP-Streaming und Bewegungserkennung</title>
+    <link rel="stylesheet" href="./css/RTSP_Streaming_Motion_Detection.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">
+          <img class="logo" src="../../../SRC/img/Logo2.png" alt="Logo" />
+        </a>
+
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="../../../index.html">Main Pages</a></li>
+          <li><a href="../../about_me.html">About Me</a></li>
+          <li><a href="../../project.html">Projects</a></li>
+          <li><a href="../../cv.html">CV</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="main-content">
+        <h1>Projekt: RTSP-Streaming und Bewegungserkennung mit YOLOv5</h1>
+        <h2>Einleitung</h2>
+        <p>
+          Dieses Projekt zielt darauf ab, einen RTSP-Stream von einer Reolink
+          RLC-510WA Kamera zu erfassen, Bewegungen zu erkennen und bei Bedarf
+          Fotos und Videos aufzunehmen. Die Bewegungserkennung erfolgt durch
+          Hintergrundsubtraktion, und die Erkennung von Personen wird mit dem
+          YOLOv5-Modell durchgeführt.
+        </p>
+
+        <h2>Ziele</h2>
+        <ul>
+          <li>RTSP-Streaming: Erfassung des Live-Streams von der Kamera.</li>
+          <li>
+            Bewegungserkennung: Erkennung von Bewegungen im Stream durch
+            Hintergrundsubtraktion.
+          </li>
+          <li>
+            Personenerkennung: Verwendung von YOLOv5 zur Erkennung von Personen
+            im Bild.
+          </li>
+          <li>
+            Automatische Aufnahme: Aufnahme von Fotos und Videos bei
+            Bewegungserkennung und bestätigter Personenerkennung.
+          </li>
+        </ul>
+
+        <h2>Aufbau</h2>
+        <ul>
+          <li>
+            <strong>RTSP-Streaming:</strong> Der RTSP-Stream wird von der Kamera
+            erfasst und in Echtzeit angezeigt.
+          </li>
+          <li>
+            <strong>Bewegungserkennung:</strong> Durch Hintergrundsubtraktion
+            wird Bewegung im Stream erkannt. Wenn Bewegung erkannt wird, wird
+            eine Wartezeit von 4 Sekunden eingeleitet, um Fehlalarme zu
+            minimieren.
+          </li>
+          <li>
+            <strong>Personenerkennung:</strong> Wenn die Bewegung bestätigt
+            wird, wird ein Foto aufgenommen und mit YOLOv5 auf Personen
+            überprüft. Falls eine Person erkannt wird, wird ein 10-sekündiges
+            Video aufgenommen.
+          </li>
+          <li>
+            <strong>Speicherung:</strong> Die aufgenommenen Fotos und Videos
+            werden in spezifischen Verzeichnissen gespeichert.
+          </li>
+        </ul>
+
+        <h2>Ergebnisse</h2>
+        <ul>
+          <li>
+            <strong>RTSP-Streaming:</strong> Der Stream wurde erfolgreich
+            erfasst und in Echtzeit angezeigt.
+          </li>
+          <li>
+            <strong>Bewegungserkennung:</strong> Die Bewegungserkennung
+            funktioniert zuverlässig und minimiert Fehlalarme durch die
+            Wartezeit.
+          </li>
+          <li>
+            <strong>Personenerkennung:</strong> YOLOv5 erkennt Personen im Bild
+            mit hoher Genauigkeit.
+          </li>
+          <li>
+            <strong>Automatische Aufnahme:</strong> Fotos und Videos werden bei
+            bestätigter Bewegung und Personenerkennung automatisch aufgenommen
+            und gespeichert.
+          </li>
+        </ul>
+        <h2>Kurzes Video :</h2>
+        <div class="video-container">
+          <video controls>
+            <source src="../../../SRC/videos/CamVideo.mp4" type="video/mp4" />
+            Ihr Browser unterstützt das Video-Tag nicht.
+          </video>
+        </div>
+        <h2>Console Output vom project</h2>
+        <div class="img">
+          <img src="/SRC/img/VideoCamTeminalOutput.png" alt="">
+        </div>
+
+        <h2>Ausblick</h2>
+        <p>
+          Dieses Projekt bietet eine solide Grundlage für die Überwachung und
+          Sicherheit. Zukünftige Erweiterungen könnten die Integration von
+          Benachrichtigungen, die Erkennung weiterer Objekte und die
+          Verbesserung der Bewegungserkennungsalgorithmen umfassen.
+        </p>
+
+        <h2>Link zum Git-Repository</h2>
+        <h5>
+          <a
+            href="https://github.com/Theinformatiker/RTSP-Streaming-Motion-Detection"
+            target="_blank"
+            >Klick hier zum Git-Repository</a
+          >
+        </h5>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2024 Volkan K. Alle Rechte vorbehalten.</p>
+        <ul class="footer-links">
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

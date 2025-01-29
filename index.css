@@ -1,0 +1,122 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  min-height: 100vh;
+}
+
+.nav-wrapper {
+  background-color: #4b73af;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.brand-logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-left: 50px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+ul li a:hover {
+  color: #ffc107;
+}
+
+nav li :last-child{
+  margin-right: 30px;
+}
+@media (max-width: 768px) {
+  .nav-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  ul li {
+    margin: 5px 0;
+  }
+}
+
+.Setup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.logo {
+  width: 90px; /* Passt die Breite des Logos an */
+  height: 60; /* Passt die Höhe des Logos an */
+  object-fit: contain;
+}
+
+.vkimg {
+  width: 100%;
+  height: 600px;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+footer {
+  background-color: #4b73af; /* Gleiche Farbe wie die Navigation */
+  color: white; /* Weißer Text */
+  padding: 10px 0; /* Innenabstand für besseren Abstand */
+  text-align: center; /* Zentrierter Text */
+}
+
+.footer-container {
+  max-width: 1200px; /* Maximalbreite für die Inhalte */
+  margin: 0 auto; /* Zentriert den Container */
+}
+
+.footer-links {
+  list-style: none; /* Entfernt die Aufzählungspunkte */
+  padding: 0;
+  margin: 10px 0 0; /* Abstand nach oben */
+  display: flex; /* Elemente horizontal anordnen */
+  justify-content: center; /* Zentriert die Links */
+  gap: 15px; /* Abstand zwischen den Links */
+}
+
+.footer-links li {
+  margin: 0;
+}
+
+.footer-links a {
+  text-decoration: none; /* Entfernt Unterstreichung */
+  color: white; /* Weißer Text */
+  font-size: 0.9rem; /* Kleinere Schriftgröße */
+}
+
+.footer-links a:hover {
+  color: #ffc107; /* Gelb als Hover-Farbe */
+}

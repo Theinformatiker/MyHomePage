@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt: Kundenabwanderungsvorhersage</title>
+    <link rel="stylesheet" href="./css/project1.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">
+        <img class="logo" src="../../../SRC/img/Logo2.png" alt="Logo" />
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="../../../index.html">Main Pages</a></li>
+        <li><a href="../../about_me.html">About Me</a></li>
+        <li><a href="../../project.html">Projekte</a></li>
+        <li><a href="../../cv.html">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="main-content">
+      <h1>Projekt Python: Kundenabwanderungsvorhersage</h1>
+      <h2>Vorhersage der Kundenabwanderung im Bankenbereich:</h2>
+      <p>
+        Diese Projektarbeit beschäftigt sich mit der Vorhersage der Kundenabwanderung (Customer Churn) im Bankenbereich. Ziel ist es, ein Modell zu entwickeln, das abwanderungsgefährdete Kunden identifiziert, um gezielte Maßnahmen zur Kundenbindung zu ergreifen. Das Modell basiert auf einem Ensemble-Ansatz, der die Algorithmen XGBoost, LightGBM und CatBoost kombiniert.
+      </p>
+
+      <h2>Ziele:</h2>
+      <ul>
+        <li>Entwicklung eines Modells zur Vorhersage der Kundenabwanderung mit einer Genauigkeit von über 87%.</li>
+        <li>Verwendung eines Ensemble-Ansatzes, um die Vorhersagegenauigkeit zu maximieren.</li>
+        <li>Optimierung der Hyperparameter mithilfe von BayesSearchCV.</li>
+      </ul>
+
+      <h2>Methodik:</h2>
+      <ul>
+        <li><strong>Datenerfassung:</strong> Der Datensatz wurde von Kaggle bezogen und enthält Informationen wie Kundenalter, Kontostand, Geografie und Geschlecht.</li>
+        <li><strong>Datenvorverarbeitung:</strong> Unwichtige Spalten wurden entfernt, kategorische Variablen wurden mit One-Hot-Encoding umgewandelt, und ein neues Feature (Age_Balance) wurde erstellt.</li>
+        <li><strong>Umgang mit unausgeglichenen Klassen:</strong> SMOTE wurde verwendet, um das Klassenungleichgewicht zu beheben.</li>
+        <li><strong>Modellierung:</strong> Es wurden drei Klassifikatoren (XGBoost, LightGBM, CatBoost) verwendet und in einem Voting-Classifier kombiniert.</li>
+        <li><strong>Optimierung:</strong> Die Hyperparameter wurden mit BayesSearchCV optimiert.</li>
+        <li><strong>Evaluierung:</strong> Die Modellleistung wurde anhand von ROC-AUC-Score, Genauigkeit und Konfusionsmatrix bewertet.</li>
+      </ul>
+
+      <h2>Ergebnisse:</h2>
+      <ul>
+        <li><strong>Modellgenauigkeit:</strong> Das Ensemble-Modell erreichte eine Genauigkeit von 90%, was eine Verbesserung von 3% gegenüber dem bestehenden ANN-Modell auf Kaggle darstellt.</li>
+        <li><strong>ROC-AUC-Score:</strong> Der ROC-AUC-Score betrug 0,9574, was auf eine ausgezeichnete Diskriminierungsfähigkeit des Modells hinweist.</li>
+        <li><strong>Konfusionsmatrix:</strong> Das Modell klassifizierte die meisten Fälle korrekt, mit 1432 True Negatives und 1384 True Positives.</li>
+        <li><strong>Feature Importance:</strong> Die wichtigsten Merkmale für die Vorhersage waren Tenure, Age und Credit Score.</li>
+      </ul>
+
+      <h2>Ausblick</h2>
+      <p>
+        Das Ensemble-Modell zeigt eine solide Leistung, aber es gibt Verbesserungspotenzial. Eine weitere Optimierung der Hyperparameter könnte die Klassifizierungsleistung steigern, insbesondere die Reduzierung von False Negatives. Das langfristige Ziel ist es, die Genauigkeit auf über 98% zu erhöhen.
+      </p>
+
+      <p>
+        <strong>Zusammenfassend:</strong> Das Modell bietet eine zuverlässige Lösung zur Vorhersage der Kundenabwanderung und kann Banken dabei unterstützen, gezielte Maßnahmen zur Kundenbindung zu ergreifen.
+      </p>
+
+      <h2>Link zum Git-Projekt</h2>
+      <h5>
+        <a href="https://github.com/Theinformatiker/Customer-Churn-Prediction--Bin-re-Klassifizierung-eines-Datensatzes-im-Banken-Bereich" target="_blank">Klick hier zum Git-Repository</a>
+      </h5>
+      <p>
+        <strong>Git_Info:</strong> Im Git-Repository befinden sich sowohl der Quellcode des Projekts als auch zwei Berichte im PDF-Format. Zum einen eine CAT-Version, die eine kurze Zusammenfassung enthält, und zum anderen eine NvS-Version, die einen sehr detaillierten Bericht mit Code-Erklärungen und Abbildungen zum Projekt bereitstellt.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2024 Volkan K. Alle Rechte vorbehalten.</p>
+      <ul class="footer-links">
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
