@@ -1,0 +1,257 @@
+/* Grundlayout */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #4b73af;
+  margin-top: 30px;
+}
+
+/* Navigation */
+.nav-wrapper {
+  background-color: #4b73af;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.brand-logo img {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+}
+
+#nav-mobile {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-mobile li {
+  margin-left: 30px;
+}
+
+#nav-mobile li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+#nav-mobile li a:hover {
+  color: #ffc107;
+}
+
+/* Main Content */
+main {
+  margin: 20px;
+  padding: 20px;
+}
+
+.main-content {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #4b73af;
+  margin-top: 20px;
+}
+
+p, ul {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.video-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.img {
+  max-width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.img img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #4b73af;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer-container ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer-container ul li {
+  margin: 0 15px;
+}
+
+.footer-container ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-container ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #nav-mobile {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  #nav-mobile li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  .main-content ul li {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Buttons and Links */
+button, a {
+  background-color: #4b73af;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover, a:hover {
+  background-color: #ffc107;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+
+/* Stil für den Slider-Container */
+.slider-container {
+  width: 600px; /* Breite des Sliders */
+  height: 400px; /* Höhe des Sliders */
+  overflow: hidden; /* Verstecke überschüssige Inhalte */
+  position: relative;
+  margin: 20px auto; /* Zentriere den Slider */
+}
+
+/* Stil für die Bilder */
+.slides {
+  display: flex; /* Flexbox für horizontale Anordnung */
+  transition: transform 0.5s ease; /* Smooth Transition beim Scrollen */
+}
+
+.slides img {
+  width: 600px; /* Breite eines Bildes */
+  height: 400px; /* Höhe eines Bildes */
+}
+
+/* Punkt-Navigation */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+/* Optional: Pfeiltasten-Styling */
+.slider-container .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+.slider-container .prev {
+  left: 10px;
+}
+
+.slider-container .next {
+  right: 10px;
+}
