@@ -1,95 +1,103 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    background-color: whitesmoke;
-    min-height: 100vh;
-  }
-  
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  min-height: 100vh;
+}
+
+.nav-wrapper {
+  background-color: #4b73af;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.brand-logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-left: 50px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+ul li a:hover {
+  color: #ffc107;
+}
+
+nav li :last-child{
+  margin-right: 30px;
+}
+ h1{
+  text-align: center;
+ }
+ 
+ p,h2{
+  margin-left: 40px;
+  margin-right: 40px;
+ }
+.rund-bild {
+  margin-left:  30px;
+  width: 300px; /* Größe des Bildes anpassen */
+  height: 300px; /* Gleiche Höhe und Breite für perfekte Rundung */
+  border-radius: 50%; /* Rundet das Bild zu einem Kreis */
+  object-fit: cover; /* Sorgt dafür, dass das Bild den Kreis füllt */
+  border: 2px solid #4b73af; /* Optional: Rahmen hinzufügen */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Schatten */
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #4b73af;
+  color: white;
+}
+@media (max-width: 768px) {
   .nav-wrapper {
-    background-color: #4b73af;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-  
-  .brand-logo {
-    color: white;
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-  }
-  
-  ul li {
-    margin-left: 50px;
-  }
-  
-  ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    transition: color 0.3s;
-  }
-  
-  ul li a:hover {
-    color: #ffc107;
-  }
-  
-  nav li :last-child{
-    margin-right: 30px;
-  }
-
-  .rund-bild {
-    width: 350px; /* Größe des Bildes anpassen */
-    height: 350px; /* Gleiche Höhe und Breite für perfekte Rundung */
-    border-radius: 50%; /* Rundet das Bild zu einem Kreis */
-    object-fit: cover; /* Sorgt dafür, dass das Bild den Kreis füllt */
-    border: 2px solid #4b73af; /* Optional: Rahmen hinzufügen */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Schatten */
-  }
-  
-
-  footer {
-    text-align: center;
-    margin-top: 200px;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 10px;
-    background-color: #4b73af;
-    color: white;
   }
-  @media (max-width: 768px) {
-    .nav-wrapper {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 10px;
-    }
-  
-    ul {
-      flex-direction: column;
-      align-items: flex-start;
-      margin-top: 10px;
-    }
-  
-    ul li {
-      margin: 5px 0;
-    }
+
+  ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
   }
-  
-  .Setup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
+
+  ul li {
+    margin: 5px 0;
   }
-  
-  .logo {
-    width: 90px; /* Passt die Breite des Logos an */
-    height: 60; /* Passt die Höhe des Logos an */
-    object-fit: contain;
-  }
+}
+
+.Setup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.logo {
+  width: 90px; /* Passt die Breite des Logos an */
+  height: 60; /* Passt die Höhe des Logos an */
+  object-fit: contain;
+}
